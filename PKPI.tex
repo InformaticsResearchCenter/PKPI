@@ -7,6 +7,7 @@
 \usepackage{amsmath}
 \usepackage{float}
 \usepackage{longtable}
+\usepackage{pdfpages}
 
 %input macros (i.e. write your own macros file called mymacros.tex 
 %and uncomment the next line)
@@ -50,12 +51,16 @@ Dinda Majesty\\github : github.com/dindamajesty13 \\
 \include{section/chapter1}
 \include{section/chapter2}
 \include{section/chapter3}
+%\include{lampiran}
+\includepdf[pages={1}]{pangkat1.pdf}      
+\includepdf[pages={1}]{pangkat2.pdf} 
+\includepdf[pages={1}]{pangkat3.pdf}
 
 %next line adds the Bibliography to the contents page
 \addcontentsline{toc}{chapter}{Bibliography}
 %uncomment next line to change bibliography name to references
 %\renewcommand{\bibname}{References}
-\bibliography{references}        %use a bibtex bibliography file refs.bib
+%\bibliography{references}        %use a bibtex bibliography file refs.bib
 \bibliographystyle{plain}  %use the plain bibliography style
 
 \end{document}
